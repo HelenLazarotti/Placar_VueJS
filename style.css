@@ -53,6 +53,14 @@ input{
     background-color: #0187d4;
     color: #000;
 }
+.btn-PlayAgain{
+    background-color: #006837;
+    padding: 0.6em;
+    border-radius: 1em;
+    border: none;
+    width: 10em;
+    margin-top: 4em;
+}
 #results{
     font-size: 30px;
     color: #0187d4;
