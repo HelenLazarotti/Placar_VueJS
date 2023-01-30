@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<div id="app">
+    <h1 class="title">Placar de Jogos</h1>
+    
+    <div class="div-players">
+        <p class="first-parag">Digite o nome dos jogadores:</p>
+
+        <div class="div-inputs">
+            <input type="text" placeholder="Jogador 1" v-model="name1"> -
+            <input type="text" placeholder="Jogador 2" v-model="name2">
+        </div>
+
+    </div>
+
+    <div class="placar">
+        <div>
+            <p class="parag-cont">{{contador1}}</p>
+        </div>
+        <p id="traco">|</p>
+        <div>
+            <p class="parag-cont">{{contador2}}</p>
+        </div>
+    </div>
+
+    <div class="div-buttons">
+        <button class="btn-ponto" v-on:click="ponto1">Ponto J1</button>
+
+        <button class="btn-ponto" v-on:click="ponto2">Ponto J2</button>
+    </div>
+
+    <div class="div-results">
+        <h2>VENCEDOR:</h2>
+
+        <p id="results">{{ winner }}</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
